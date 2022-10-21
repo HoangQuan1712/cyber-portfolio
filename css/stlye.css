@@ -1,0 +1,87 @@
+/* header */
+.container {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.logo i {
+  color: green;
+  font-size: 3rem;
+}
+.logo span {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+.menu li {
+  margin: 0 15px;
+}
+.menu li::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 5px;
+  background-color: green;
+  transition: all 0.5s;
+}
+.menu li:hover::after {
+  width: 100%;
+}
+.menu li.active::after {
+  width: 100%;
+}
+.menu li a {
+  transition: all 0.5s;
+}
+#nav__tile:hover {
+  color: aqua;
+}
+.container .navbar__j {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+.navbar-brand span {
+  color: red;
+}
+#nav__tile {
+  color: red;
+}
+/* carousel*/
+.carousel-item {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-item:nth-child(1) {
+  background-image: url(./../images/anh-chill-1.jpg);
+}
+.carousel-item:nth-child(2) {
+  background-image: url(./../images/Bo-Hinh-Nen-Tinh-Yeu-Dep-Nhat-Va-Tham-Thiet.jpg);
+}
+.carousel-item:nth-child(3) {
+  background-image: url(./../images/hinh-anh-canh-dep-nhat-the-gioi.jpg);
+}
+.carousel__thumb {
+  width: 140px;
+  margin: auto;
+}
+.carousel__thumb img {
+  border-radius: 50%;
+}
+.carousel-caption {
+  top: 40%;
+}
+
+.carousel-caption h3 {
+  color: red;
+
+  top: 40%;
+}
+.carousel-caption p {
+  color: red;
+  top: 52%;
+}
+/* project */
+.project__tile {
+  text-align: center;
+  padding-top: 70px;
+}
